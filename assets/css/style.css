@@ -1,0 +1,299 @@
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    background-image:url(../images/Background.png);
+    margin-bottom: 90px;
+}
+
+h1 {
+    position: absolute;
+    background-color: #4aaaa5;
+    color: #ffffff;
+    height: 43px;
+    width: 225px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    top:-144px;
+    font-family: 'Georgia', Times, Times New Roman, serif; 
+
+}
+
+h2 {
+    color: #4aaaa5;
+    width:920px;
+    margin:auto;
+    height: 30px;
+    padding-top:25px;
+    padding-bottom: 15px;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: #dddddd;
+    font-family: 'Georgia', Times, Times New Roman, serif; 
+}
+
+#TopBar {
+    position: relative;
+    background-color: #ffffff;
+    width: 1540px;
+    color: #ffffff;
+    top: 0%;
+    height: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+   border-bottom-style: solid;
+   border-bottom-width: 2px;
+   border-bottom-color: #cccccc;
+   margin-bottom: 40px;
+}
+
+.headerFont{
+ont-family: 'Georgia', Times, Times New Roman, serif;    f
+}
+
+#PortfolioButton {
+    position: relative; float: right;
+    color: #777777;
+    top: -80px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-left-style: solid;
+    border-left-color: #cccccc;
+    border-left-width: 1px;
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-right-color: #cccccc;
+    height: 20px;
+    text-decoration: none;
+}
+
+#ContactButton {
+    position: relative; float: right;
+    color: #777777;
+    top: -100px;
+    padding: 20px;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    text-decoration: none;
+
+}
+
+#AboutButton {
+    position: relative; float: right;
+    color: #777777;
+    top: -100px;
+    padding: 20px;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+.footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #666666;
+    height: 50px;
+    border-top-style: solid;
+    border-top-width: 3px;
+    border-top-color: #4aaaa5;
+}
+
+#ContentIndex {
+    position: relative;
+    background-color: #ffffff;
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 520px;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: #777777;
+}
+
+#profilePic {
+    float:left;
+    padding: 20px;
+    padding-top: 25px;
+}
+
+#p1 {
+   float:left;
+    padding-top: 5px;
+    padding-right: 20px;
+    width:600px;
+    letter-spacing: 1.5px;
+}
+
+#p2{
+    padding-right: 20px;
+    letter-spacing: 1.5px;
+}
+
+#p3{
+    padding-right: 20px;
+    padding-left: 20px;
+    letter-spacing: 1.5px;
+}
+
+#ContentPortfolio {
+    position:relative;
+    background-color: #ffffff;
+    width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 960px;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: #777777;
+}
+
+#HangmanPic {
+    padding: 30px;
+    position: absolute;
+
+}
+
+#HangmanText {
+    float: left;
+    position: absolute;
+    padding: 15px;
+    left: 30px;
+    top: 272px;
+    width: 245px;
+    background-color: #4aaaa5;
+    text-align: center;
+    color: #ffffff;
+}
+
+#rpgGameText {
+    width: 245px;
+    background-color: #4aaaa5;
+    text-align: center;
+    color: #ffffff;
+    padding: 15px;
+    position: absolute;
+    top: 272px;
+    left: 345px;
+}
+
+#rpgGamePic {
+    position:absolute;
+    padding: 30px;
+    left: 315px;
+}
+
+#TriviaGamePic {
+    position: absolute;
+    padding: 30px;
+    top: 355px;
+}
+
+#TriviaGameText {
+    width: 245px;
+    background-color: #4aaaa5;
+    text-align: center;
+    color: #ffffff;
+    padding: 15px;
+    position: absolute;
+    top: 555px;
+    left: 30px;
+}
+
+#RIWPic{
+    position:absolute;
+    padding: 30px;
+    top: 355px;
+    left: 315px;
+}
+
+#RIWText {
+    width: 245px;
+    background-color: #4aaaa5;
+    text-align: center;
+    color: #ffffff;
+    padding: 15px;
+    position: absolute;
+    top: 555px;
+    left: 345px;
+}
+
+#RPSPic {
+    position:absolute;
+    padding: 30px;
+    top: 640px;
+    
+}
+
+#RPSText {
+    width: 245px;
+    background-color: #4aaaa5;
+    text-align: center;
+    color: #ffffff;
+    padding: 15px;
+    position: absolute;
+    top: 840px;
+    left: 30px;
+    
+}
+
+#ContactContent {
+    position:relative;
+    background-color: #ffffff;
+    width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 545px;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: #777777;
+}
+
+#nameForm {
+    width:915px;
+    position:absolute;
+    top: 30px;
+}
+
+#nameForm2{
+    position:absolute;
+    left: 30px;
+    top:85px;
+}
+
+#emailForm {
+    width:915px;
+    position:absolute;
+    top: 30px;
+}
+
+#emailForm2{
+    position:absolute;
+    left: 30px;
+    top:155px;
+}
+
+#messageForm {
+    width:915px;
+    position:absolute;
+    top: 30px;
+    height: 200px;
+}
+
+#messageForm2{
+    position:absolute;
+    left: 30px;
+    top:225px;
+    
+}
+
+#submitButton{
+    color:white;
+    background-color: #4aaaa5;
+    border: none;
+    text-decoration: none;
+    padding: 10px;
+    width: 100px;
+    position:absolute;
+    top: 485px;
+    left: 30px;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
