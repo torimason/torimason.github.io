@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Car Adventures!</title>
+  </head>
+  <body>
+    <h1>Car Adventures!</h1>
+    <h2>Use the following keys to interact with the car...</h2>
+    <h3>"h" = honk</h3>
+    <h3>"d" = drive to work</h3>
+    <h3>"w" = drive around the world</h3>
+    <h3>"t" = get a tuneup!</h3>
+    <h2>See console for car stats.</h2>
+    <script>
+
+      var car = {
+        make: "Fiat",
+        model: "500",
+        color: "Yellow",
+        mileage: 3000,
+        isWorking: true,
+
+        driveToWork: function() {
+
+          alert("Old Mileage: " + this.mileage);
+
+          this.mileage = this.mileage + 8;
+
+          alert("New mileage: " + this.mileage);
+        },
+
+        driveAroundWorld: function() {
+
+          alert("Old Mileage: " + this.mileage );
+
+          this.mileage = this.mileage + 24000;
+
+          alert("New Mileage: " + this.mileage);
+          alert("Car needs a tuneup!");
+
+          this.isWorking = false;
+        },
+
+        getTuneUp: function() {
+          alert("Car is ready to go!");
+          this.isWorking = true;
+        },
+
+        honk: function() {
+          alert("Honk! Honk!");
+        }
+      };
+
+    function reWriteStats() {
+        console.log("Make: " +car.make);
+        console.log ("Model: " +car.model);
+        console.log ("Color: " +car.color);
+        console.log ("Mileage: " +car.mileage);
+        console.log("Is Running: " + car.isWorking);
+        console.log("-------------------------------------");
+    }
+
+    document.onkeyup = function(event) {
+
+        var letter = event.key.toLowerCase();
+
+        if (letter === "h") {
+            car.honk();
+            reWriteStats();
+        }
+
+        else if (letter === "d") {
+            car.driveToWork();
+            reWriteStats();
+        }
+
+        else if(letter === "w") {
+            car.driveAroundWorld();
+            reWriteStats();
+        }
+
+        else if(letter === "t") {
+            car.getTuneUp();
+            reWriteStats();
+        }
+
+        else {
+            console.log("Not a working key!")
+        }
+    };
+    
+    
+    
+    
+    </script>
+    
+  </body>
+</html>

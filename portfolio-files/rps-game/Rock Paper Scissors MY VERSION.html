@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Rock Paper Scissors</title>
+</head>
+
+<body>
+    <div class = "instructions">    
+        <h1>Rock Paper Scissors Game</h1>
+        <h2>Can you beat me?</h2>
+            <br>
+        <h5>To play, choose...</h5>
+        <p>Rock = "r"</p>
+        <p>Paper = "p"</p>
+        <p>Scissors = "s"</p>
+    </div>
+
+
+  <div id="game">
+        
+  </div>
+
+  <script type="text/javascript">
+  
+    var computerChoices = ["r" , "p" , "s"];
+
+    var wins = 0;
+    var losses = 0;
+
+    document.onkeyup = function(event) {
+
+        var userGuess = event.key;
+
+        var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
+    
+        if ((userGuess === "r") || (userGuess === "p") || (userGuess === "s")) {
+
+            if ((userGuess === "r") && (computerGuess === "p")) {
+                losses++;
+            }
+
+            if ((userGuess === "r") && (computerGuess === "s")) {
+                wins++;
+            }
+
+            if ((userGuess === "p") && (computerGuess === "r")) {
+                wins++;
+            }
+
+            if ((userGuess === "p") && (computerGuess === "s")) {
+                losses++;
+            }
+
+            if ((userGuess === "s") && (computerGuess === "r")) {
+                losses++;
+            }
+            
+            if ((userGuess === "s") && (computerGuess === "p")) {
+                wins++;
+            }
+
+            if (userGuess === computerGuess) {
+                alert("TIE!");
+            }
+
+            var html = 
+                "<p>You chose: " + userGuess + "</p>" + 
+                "<p>I chose: " + computerGuess + "</p>" +
+                "<p>Your wins: " + wins + "</p>" +
+                "<p>My wins: " + losses + "</p>";
+
+            document.querySelector("#game").innerHTML = html;
+
+        }
+    };
+
+  </script>
+
+</body>
+
+</html>
