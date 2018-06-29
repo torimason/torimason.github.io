@@ -60,3 +60,7 @@ a {
     color: white;
     text-decoration: none;
 }
+
+.card-img-top{
+    height: 195px;
+}
