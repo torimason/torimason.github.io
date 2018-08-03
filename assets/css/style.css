@@ -55,6 +55,7 @@ h4 {
 .cardText {
     text-align: center;
     font-size: 18px;
+    padding-top: 10px;
 }
 
 a:hover{
@@ -78,4 +79,9 @@ a {
 
 #name-text{
     font-size: 32px;
+}
+
+.repo-text{
+    text-align: center;
+    font-size: 14px;
 }
