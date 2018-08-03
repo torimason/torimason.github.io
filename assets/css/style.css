@@ -49,11 +49,18 @@ h4 {
 
 .aboutMeText {
     text-indent: 20px;
+    padding-top: 30px;
 }
 
 .cardText {
     text-align: center;
     font-size: 18px;
+}
+
+a:hover{
+    color: grey;
+    text-decoration-style: none;
+    text-decoration-line: none;
 }
 
 a {
@@ -63,4 +70,12 @@ a {
 
 .card-img-top{
     height: 195px;
+}
+
+.icon-link{
+    font-size: 24px;
+}
+
+#name-text{
+    font-size: 32px;
 }
